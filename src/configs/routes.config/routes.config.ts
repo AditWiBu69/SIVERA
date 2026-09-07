@@ -10,6 +10,15 @@ export const protectedRoutes: Routes = {
             pageContainerType: 'contained',
         },
     },
+    // 👇 Rute dashboard kita daftarkan sesuai aturan tipe yang benar 👇
+    '/dashboard': {
+        key: 'dashboard',
+        authority: [],
+        meta: {
+            pageBackgroundType: 'plain',
+            pageContainerType: 'contained',
+        },
+    },
 }
 
 export const publicRoutes: Routes = {}
