@@ -1,5 +1,4 @@
 import {
-    NAV_ITEM_TYPE_TITLE,
     NAV_ITEM_TYPE_ITEM,
     NAV_ITEM_TYPE_COLLAPSE,
 } from '@/constants/navigation.constant'
@@ -18,7 +17,9 @@ const navigationConfig: NavigationTree[] = [
     },
     {
         key: 'inventaris',
-        path: '',
+        // PERBAIKAN: Mengubah lokasi file menjadi string kosong 
+        // karena ini adalah menu Collapse (induk), sama seperti Transaksi.
+        path: '', 
         title: 'Menu Inventaris',
         translateKey: 'nav.inventaris.menu',
         icon: 'inventaris',
@@ -27,7 +28,7 @@ const navigationConfig: NavigationTree[] = [
         subMenu: [
             {
                 key: 'inventaris.ruanganLab',
-                path: '/inventaris/ruangan-lab',
+                path: '/inventaris/ruangan-lab', // Ini URL yang benar untuk halamannya
                 title: 'Ruangan Lab',
                 translateKey: 'nav.inventaris.ruanganLab',
                 icon: '',
